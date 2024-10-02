@@ -9,11 +9,11 @@ variable "location" {
 }
 
 variable "app_service_plan_name" {
-  default = "web-app-asp"
+  default = "web-app50455-asp"
   type = string
 }
 
 variable "webapp_name" {
-  default = "web-app"
+  default = "web-app50455"
   type = string
 }
