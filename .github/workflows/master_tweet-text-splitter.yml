@@ -65,7 +65,7 @@ jobs:
       - name: Retrieve Azure Web App Publish Profile
         id: getpublishsprofile
         run: |
-          PUBLISH_PROFILE=$(az webapp deployment list-publishing-profiles --name "tweet-text-splitter" --resource-group "testRG" --xml)
+          PUBLISH_PROFILE=$(az webapp deployment list-publishing-profiles --name "web-app50455" --resource-group "testRG" --xml)
           echo "PUBLISH_PROFILE<<EOF" >> $GITHUB_ENV
           echo "$PUBLISH_PROFILE" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
