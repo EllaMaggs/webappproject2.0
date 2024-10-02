@@ -9,11 +9,11 @@ variable "location" {
 }
 
 variable "app_service_plan_name" {
-  default = "tweet-text-splitter-asp"
+  default = "web-app-asp"
   type = string
 }
 
 variable "webapp_name" {
-  default = "tweet-text-splitter"
+  default = "web-app"
   type = string
 }

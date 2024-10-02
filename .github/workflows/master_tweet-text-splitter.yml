@@ -63,7 +63,7 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Retrieve Azure Web App Publish Profile
-        id: getpublishprofile
+        id: getpublishsprofile
         run: |
           PUBLISH_PROFILE=$(az webapp deployment list-publishing-profiles --name "tweet-text-splitter" --resource-group "testRG" --xml)
           echo "PUBLISH_PROFILE<<EOF" >> $GITHUB_ENV
